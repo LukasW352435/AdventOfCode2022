@@ -1,4 +1,4 @@
-with open("input_1.txt") as f:
+with open("input.txt") as f:
     txt = f.read().split('\n')
     sums = []
     s = 0
