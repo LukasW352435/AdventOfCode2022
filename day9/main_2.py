@@ -159,5 +159,3 @@ with open("input.txt") as f:
             if grid_tail[i][j] == '#':
                 count += 1
     print(count)
-
-# wrong 2649 to high
