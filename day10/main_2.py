@@ -2,6 +2,7 @@ x = 1
 cycles = 0
 addx_cycles = 0
 crt_display = []
+PIXEL_ON = '█'
 
 
 def init_crt_display():
@@ -52,7 +53,7 @@ with open("input.txt") as f:
     while command_index < len(commands):
         # print(f'{int(cycles / 40)}, {int(cycles % 40) - 1}, x: {x}')
         if cycles % 40 == x or cycles % 40 == x - 1 or cycles % 40 == x + 1:
-            crt_display[int(cycles / 40)][int(cycles % 40)] = '#'
+            crt_display[int(cycles / 40)][int(cycles % 40)] = PIXEL_ON
         cycles += 1
         command_index += execute_command(commands[command_index])
     display_crt_display()
